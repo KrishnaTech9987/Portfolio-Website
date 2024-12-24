@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./styles/globals.css";
 import Layout from "./component/layout/Layout";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased font-sans`}>
-        <Layout>{children}</Layout>
+        <Layout>
+          {children}
+          <SpeedInsights />
+        </Layout>
       </body>
     </html>
   );
