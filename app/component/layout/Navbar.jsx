@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <GradientButton text="Sign Up" width="72px" height="35px" />
+        <GradientButton text="Sign Up" width="70px" height="35px" />
       </div>
     </nav>
   );
