@@ -12,9 +12,13 @@ const Navbar = () => {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="container mx-auto flex items-center justify-between p-4">
+      <div className="container mx-auto flex-center-between">
         <Link className="text-lg font-bold" href="/">
-          <img src="/assets/images/Common/Navbar/logo.png" alt="Brand Logo" className="h-8" />
+          <img
+            src="/assets/images/Common/Navbar/logo.png"
+            alt="Brand Logo"
+            className="h-8"
+          />
         </Link>
         <button
           className="md:hidden"
@@ -50,7 +54,12 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <GradientButton text="Sign Up" width="70px" height="35px" />
+        <GradientButton
+          text="Contact Us"
+          width="147px"
+          height="47px"
+          // className="px-[30] py-[15px]"
+        />
       </div>
     </nav>
   );
