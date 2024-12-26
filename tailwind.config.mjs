@@ -32,6 +32,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        // "footer-gradient-start": "#0e1c26",
+        // "footer-gradient-mid": "#2a454b",
+        // "footer-gradient-end": "#294861",
+        footer: "#111204",
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
@@ -112,6 +116,16 @@ module.exports = {
         "2xl": "var(--font-size-2xl)",
         "3xl": "var(--font-size-3xl)",
         "4xl": "var(--font-size-4xl)",
+        custom: "16px",
+      },
+      backgroundImage: {
+        "footer-gradient":
+          "linear-gradient(to right, #0e1c26, #2a454b, #294861)",
+      },
+      textAlign: {
+        left: "left",
+        center: "center",
+        right: "right",
       },
     },
   },
