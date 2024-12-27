@@ -172,10 +172,29 @@ module.exports = {
           alignItems: "center",
           justifyContent: "space-between",
         },
+        ".flex-start-between-col": {
+          display: "flex",
+          alignItems: "start",
+          justifyContent: "space-between",
+          flexDirection: "column",
+        },
+        ".flex-center-between-row": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexDirection: "row",
+        },
+        ".flex-center-between-col": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexDirection: "column",
+        },
         ".flex-align-center": {
           display: "flex",
           alignItems: "center",
         },
+
         ".hide-scrollbar": {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",

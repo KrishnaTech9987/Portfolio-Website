@@ -10,34 +10,33 @@ export const FooterMail = () => (
       d="M1.66797 4.9987C1.66797 4.55667 1.84356 4.13275 2.15612 3.82019C2.46868 3.50763 2.89261 3.33203 3.33464 3.33203H16.668C17.11 3.33203 17.5339 3.50763 17.8465 3.82019C18.159 4.13275 18.3346 4.55667 18.3346 4.9987V14.9987C18.3346 15.4407 18.159 15.8646 17.8465 16.1772C17.5339 16.4898 17.11 16.6654 16.668 16.6654H3.33464C2.89261 16.6654 2.46868 16.4898 2.15612 16.1772C1.84356 15.8646 1.66797 15.4407 1.66797 14.9987V4.9987Z"
       stroke="white"
       strokeWidth="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M1.66797 6.66797L7.9188 11.6688C8.50988 12.1417 9.24432 12.3994 10.0013 12.3994C10.7583 12.3994 11.4927 12.1417 12.0838 11.6688L18.3346 6.66797"
       stroke="white"
       strokeWidth="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
 
 export const FooterFacebook = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="1"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+    <path
+      d="M18 6.3H14.9935C14.4505 6.3 14.01 6.74 14.01 7.2835V10.7335H18L17.4155 14.532H14.0105V21.5H9.6225V14.532H6V10.7335H9.5755L9.6225 7.1285L9.616 6.4735C9.61091 5.95364 9.70889 5.43793 9.90427 4.95616C10.0996 4.47439 10.3886 4.03611 10.7543 3.66665C11.1201 3.29718 11.5554 3.00385 12.0352 2.80361C12.5149 2.60336 13.0296 2.50017 13.5495 2.5H18V6.3Z"
+      stroke="white"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -84,12 +83,30 @@ export const FooterWhatsApp = () => (
     fill="none"
     stroke="currentColor"
     strokeWidth="1.25"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
   >
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
     <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+  </svg>
+);
+
+export const FooterPhone = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.25"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
   </svg>
 );
