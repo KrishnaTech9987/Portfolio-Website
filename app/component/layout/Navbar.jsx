@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-white bg-opacity-30 backdrop-blur-md text-black shadow-navbar"
+      className="bg-white bg-opacity-30 backdrop-blur-md text-black shadow-navbar h-[100px] flex-center-center"
       role="navigation"
       aria-label="Main navigation"
     >
@@ -17,7 +17,7 @@ const Navbar = () => {
           <img
             src="/assets/images/Common/Navbar/logo.png"
             alt="Brand Logo"
-            className="h-8"
+            className="h-12 w-14"
           />
         </Link>
         <button
@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           {isOpen ? "Close" : "Menu"}
         </button>
-        <ul className={`flex space-x-4 ${isOpen ? "block" : "hidden"} md:flex`}>
+        <ul className={`flex space-x-8 ${isOpen ? "block" : "hidden"} md:flex`}>
           <li>
             <Link className="text-black" href="/about">
               Services

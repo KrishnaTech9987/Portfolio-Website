@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
       <main className="flex-grow overflow-auto">{children}</main>
-      <div className="md:sticky md:top-0 md:z-50">
+      <div className="md:sticky md:top-0 md:z-40">
         <Footer />
       </div>
     </div>
