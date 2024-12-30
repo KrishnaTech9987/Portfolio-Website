@@ -6,7 +6,7 @@ import HeroSection from "./component/sections/HeroSection";
 // import Portfolio from '@/components/sections/Portfolio';
 // import LatestWork from '@/components/sections/LatestWork';
 import ContactUs from "./component/sections/ContactUs";
-// import Pricing from '@/components/sections/Pricing';
+import Pricing from "./component/sections/Pricing";
 
 export default function Home() {
   return (
@@ -15,8 +15,8 @@ export default function Home() {
       {/* <Services />
       <Testimonials />
       <Portfolio />
-      <LatestWork />
-      <Pricing /> */}
+      <LatestWork /> */}
+      <Pricing />
       <ContactUs />
     </Layout>
   );
