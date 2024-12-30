@@ -25,7 +25,7 @@ const Agency = () => {
           </div>
           <div className="relative h-[400px]">
             <Image
-              src="/placeholder.svg"
+              src="/assets/images/HomePage/Home/bg3.jpg"
               alt="Agency illustration"
               fill
               className="object-contain"

@@ -8,12 +8,14 @@ import Services from "./component/sections/Services";
 import ContactUs from "./component/sections/ContactUs";
 import Pricing from "./component/sections/Pricing";
 import Agency from "./component/sections/Agency";
+import Process from "./component/sections/Process";
 
 export default function Home() {
   return (
     <Layout>
       <HeroSection />
       <Services />
+      <Process />
       {/* <Testimonials />
       <Portfolio />
       <LatestWork /> */}
