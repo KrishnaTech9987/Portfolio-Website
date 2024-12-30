@@ -1,23 +1,27 @@
 "use client";
 import Layout from "./component/layout/Layout";
 import HeroSection from "./component/sections/HeroSection";
-// import Services from '@/components/sections/Services';
+import Services from "./component/sections/Services";
 // import Testimonials from '@/components/sections/Testimonials';
 // import Portfolio from '@/components/sections/Portfolio';
 // import LatestWork from '@/components/sections/LatestWork';
-// import ContactUs from '@/components/sections/ContactUs';
-// import Pricing from '@/components/sections/Pricing';
+import ContactUs from "./component/sections/ContactUs";
+import Pricing from "./component/sections/Pricing";
+import Agency from "./component/sections/Agency";
+import Process from "./component/sections/Process";
 
 export default function Home() {
   return (
     <Layout>
       <HeroSection />
-      {/* <Services />
-      <Testimonials />
+      <Services />
+      <Process />
+      {/* <Testimonials />
       <Portfolio />
-      <LatestWork />
+      <LatestWork /> */}
+      <Agency />
       <Pricing />
-      <ContactUs /> */}
+      <ContactUs />
     </Layout>
   );
 }

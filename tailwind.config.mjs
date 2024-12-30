@@ -32,6 +32,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        // "footer-gradient-start": "#0e1c26",
+        // "footer-gradient-mid": "#2a454b",
+        // "footer-gradient-end": "#294861",
+        footer: "#111204",
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
@@ -74,6 +78,8 @@ module.exports = {
         "gray-dark": "#273444",
         gray: "#8492a6",
         "gray-light": "#d3dce6",
+        h3: "#252623",
+        formInputBg: "#f5f5f5",
       },
       fontFamily: {
         sans: ["Poppins", "Outfit", ...fontFamily.sans],
@@ -104,14 +110,37 @@ module.exports = {
         tightest: "-.05em",
       },
       fontSize: {
-        xs: "var(--font-size-xs)",
-        sm: "var(--font-size-sm)",
-        base: "var(--font-size-base)",
-        lg: "var(--font-size-lg)",
-        xl: "var(--font-size-xl)",
-        "2xl": "var(--font-size-2xl)",
-        "3xl": "var(--font-size-3xl)",
-        "4xl": "var(--font-size-4xl)",
+        xs: "var(--font-size-xs)", // Extra small (varies, typically around 12px)
+        sm: "var(--font-size-sm)", // Small (varies, typically around 14px)
+        base: "var(--font-size-base)", // Base (typically 16px)
+        lg: "var(--font-size-lg)", // Large (typically 18px)
+        xl: "var(--font-size-xl)", // Extra large (typically 20px)
+        "2xl": "var(--font-size-2xl)", // 2x extra large (typically 24px)
+        "3xl": "var(--font-size-3xl)", // 3x extra large (typically 30px)
+        "4xl": "var(--font-size-4xl)", // 4x extra large (typically 36px)
+        custom: "16px", // Custom size (16px)
+      },
+      backgroundImage: {
+        "footer-gradient":
+          "linear-gradient(to right, #0e1c26, #2a454b, #294861)",
+      },
+      textAlign: {
+        left: "left",
+        center: "center",
+        right: "right",
+      },
+      borderRadius: {
+        sm: "0.125rem", // Small border radius (2px)
+        DEFAULT: "0.25rem", // Default border radius (4px)
+        md: "0.375rem", // Medium border radius (6px)
+        lg: "0.5rem", // Large border radius (8px)
+        xl: "0.75rem", // Extra large border radius (12px)
+        "2xl": "1rem", // 2x extra large border radius (16px)
+        "3xl": "1.5rem", // 3x extra large border radius (24px)
+        full: "9999px", // Full border radius for circles
+      },
+      animation: {
+        spinSlow: "spin 4s linear infinite",
       },
     },
   },
@@ -158,10 +187,29 @@ module.exports = {
           alignItems: "center",
           justifyContent: "space-between",
         },
+        ".flex-start-between-col": {
+          display: "flex",
+          alignItems: "start",
+          justifyContent: "space-between",
+          flexDirection: "column",
+        },
+        ".flex-center-between-row": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexDirection: "row",
+        },
+        ".flex-center-between-col": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexDirection: "column",
+        },
         ".flex-align-center": {
           display: "flex",
           alignItems: "center",
         },
+
         ".hide-scrollbar": {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",
