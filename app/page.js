@@ -7,6 +7,7 @@ import HeroSection from "./component/sections/HeroSection";
 // import LatestWork from '@/components/sections/LatestWork';
 import ContactUs from "./component/sections/ContactUs";
 import Pricing from "./component/sections/Pricing";
+import Agency from "./component/sections/Agency";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <Portfolio />
       <LatestWork /> */}
+      <Agency />
       <Pricing />
       <ContactUs />
     </Layout>

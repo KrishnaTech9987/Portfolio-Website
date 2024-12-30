@@ -73,7 +73,14 @@ const Navbar = () => {
               className="h-12 w-14"
             />
           </Link>
-          <nav className="hidden md:flex items-center space-x-8">
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+          >
+            {isOpen ? "Close" : "Menu"}
+          </button>
+          <nav className={`md:flex items-center space-x-8 ${isOpen ? "block" : "hidden"}`}>
             <Link href="/" className="text-gray-700 hover:text-[#FF5722]">
               Home
             </Link>
@@ -96,10 +103,6 @@ const Navbar = () => {
               Blog
             </Link>
           </nav>
-          {/* <GradientButton className="bg-[#FF5722] hover:bg-[#F4511E] text-white">
-            Sign Up
-          </GradientButton> */}
-
           <GradientButton
             text="Contact Us"
             width="147px"
