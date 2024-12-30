@@ -59,12 +59,12 @@ const Process = () => {
               ))}
             </div>
             <div className="flex space-x-4">
-              <button className="bg-[#FF5722] hover:bg-[#F4511E] text-white">
+              <button className="bg-[#FF5722] hover:bg-[#F4511E] text-white rounded-full p-4">
                 Get Started
               </button>
               <button
                 variant="outline"
-                className="border-[#FF5722] text-[#FF5722]"
+                className="border-[#FF5722] text-[#FF5722] rounded-full p-4"
               >
                 Read more
               </button>
