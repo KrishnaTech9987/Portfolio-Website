@@ -5,7 +5,7 @@ import HeroSection from "./component/sections/HeroSection";
 // import Testimonials from '@/components/sections/Testimonials';
 // import Portfolio from '@/components/sections/Portfolio';
 // import LatestWork from '@/components/sections/LatestWork';
-// import ContactUs from '@/components/sections/ContactUs';
+import ContactUs from "./component/sections/ContactUs";
 // import Pricing from '@/components/sections/Pricing';
 
 export default function Home() {
@@ -16,8 +16,8 @@ export default function Home() {
       <Testimonials />
       <Portfolio />
       <LatestWork />
-      <Pricing />
-      <ContactUs /> */}
+      <Pricing /> */}
+      <ContactUs />
     </Layout>
   );
 }

@@ -19,8 +19,8 @@ const Footer = () => {
               />
             </Link>
             <p className="text-sm leading-6 w-[311px] text-start">
-              Krishna Media - The leading digital agency based in India,
-              working with top-tier clients, from start-ups to enterprises.
+              Krishna Media - The leading digital agency based in India, working
+              with top-tier clients, from start-ups to enterprises.
             </p>
           </div>
 
