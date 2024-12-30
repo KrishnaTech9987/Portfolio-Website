@@ -230,6 +230,55 @@ const pricingCategories = [
 
 const Pricing = () => {
   return (
+    // <div className="min-h-screen bg-[#0D0D0D] py-12 px-4">
+    //   <header className="text-center mb-12">
+    //     <h1 className="text-5xl font-bold text-[#BBFF00] mb-4">
+    //       Pricing Plans
+    //     </h1>
+    //     <p className="text-lg text-gray-400">
+    //       Choose the plan that best fits your needs for Instagram, YouTube, and
+    //       Facebook services.
+    //     </p>
+    //   </header>
+    //   <div className="max-w-7xl mx-auto space-y-12">
+    //     {pricingCategories.map((category, categoryIndex) => (
+    //       <div key={categoryIndex}>
+    //         <h2 className="text-4xl font-bold text-white mb-6">
+    //           {category.platform}
+    //         </h2>
+    //         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    //           {category.plans.map((plan, planIndex) => (
+    //             <div
+    //               key={planIndex}
+    //               className="relative bg-[#1A1A1A] rounded-2xl p-8 shadow-md"
+    //             >
+    //               <h3 className="text-2xl font-bold text-white mb-4">
+    //                 {plan.type}
+    //               </h3>
+    //               <ul className="space-y-4">
+    //                 {plan.options.map((option, optionIndex) => (
+    //                   <li
+    //                     key={optionIndex}
+    //                     className="flex justify-between items-center text-white"
+    //                   >
+    //                     <span>{option.quantity}</span>
+    //                     <span className="text-[#BBFF00] font-medium">
+    //                       ₹{option.price}
+    //                     </span>
+    //                   </li>
+    //                 ))}
+    //               </ul>
+    //               <button className="w-full border border-[#BBFF00] text-[#BBFF00] py-3 rounded-lg mt-8 hover:bg-[#BBFF00] hover:text-black transition-colors">
+    //                 Book Now
+    //               </button>
+    //             </div>
+    //           ))}
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+
     <div className="min-h-screen bg-[#0D0D0D] py-12 px-4">
       <header className="text-center mb-12">
         <h1 className="text-5xl font-bold text-[#BBFF00] mb-4">
@@ -246,11 +295,11 @@ const Pricing = () => {
             <h2 className="text-4xl font-bold text-white mb-6">
               {category.platform}
             </h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {category.plans.map((plan, planIndex) => (
                 <div
                   key={planIndex}
-                  className="relative bg-[#1A1A1A] rounded-2xl p-8 shadow-md"
+                  className="relative bg-[#1A1A1A] rounded-2xl p-6 shadow-md"
                 >
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {plan.type}
@@ -268,7 +317,7 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full border border-[#BBFF00] text-[#BBFF00] py-3 rounded-lg mt-8 hover:bg-[#BBFF00] hover:text-black transition-colors">
+                  <button className="w-full border border-[#BBFF00] text-[#BBFF00] py-3 rounded-lg mt-6 hover:bg-[#BBFF00] hover:text-black transition-colors">
                     Book Now
                   </button>
                 </div>
