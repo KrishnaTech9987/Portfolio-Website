@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link className="text-lg font-bold" href="/">
             <img
-              src="/assets/images/Common/Navbar/logo.png"
+              src="/assets/images/Common/Navbar/Logo.png"
               alt="Brand Logo"
               className="h-12 w-14"
             />
@@ -80,7 +80,11 @@ const Navbar = () => {
           >
             {isOpen ? "Close" : "Menu"}
           </button>
-          <nav className={`md:flex items-center space-x-8 ${isOpen ? "block" : "hidden"}`}>
+          <nav
+            className={`md:flex items-center space-x-8 ${
+              isOpen ? "block" : "hidden"
+            }`}
+          >
             <Link href="/" className="text-gray-700 hover:text-[#FF5722]">
               Home
             </Link>
