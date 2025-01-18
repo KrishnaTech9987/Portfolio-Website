@@ -84,6 +84,8 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", "Outfit", ...fontFamily.sans],
         questrial: "Questrial",
+        manrope: ['Manrope', 'sans-serif'],
+        pockota: ['Pockota Medium', 'sans-serif'],
       },
       gridTemplateColumns: {
         "16-auto": "250px auto",

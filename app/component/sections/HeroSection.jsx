@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-pockota">
               We create <span className="text-[#FF5722]">solutions</span> for
               your business
             </h1>
@@ -21,7 +21,7 @@ const HeroSection = () => {
           </div>
           <div className="relative h-[400px]">
             <Image
-              src="/assets/images/HomePage/Home/bg1.png"
+              src="/assets/images/HomePage/HeroSection/HeroAvatar.png"
               alt="Hero illustration"
               fill
               className="object-contain"
