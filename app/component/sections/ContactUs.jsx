@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { ContactUsSocialLinks } from "@/app/data/socialLinks";
+import { ContactUsSocialLinks } from "../../data/socialLinks";
 
 const ContactUs = () => {
   const {

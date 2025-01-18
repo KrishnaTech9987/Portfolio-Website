@@ -158,7 +158,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    require("acentricity-ui"),
+    // require("acentricity-ui"),
     plugin(function ({ addUtilities }) {
       const newUtilities = {
         ".text-muted": {
@@ -239,7 +239,7 @@ module.exports = {
       };
       addUtilities(newUtilities);
     }),
-    require("addVariablesForColors"),
+    // require("addVariablesForColors"),
   ],
   darkMode: "class",
 };
