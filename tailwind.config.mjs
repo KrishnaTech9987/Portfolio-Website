@@ -91,6 +91,7 @@ module.exports = {
         questrial: "Questrial",
         manrope: ["Manrope", "sans-serif"],
         pockota: ["Pockota Medium", "sans-serif"],
+        "mona-sans": ["Mona Sans", "sans-serif"],
       },
       gridTemplateColumns: {
         "16-auto": "250px auto",
