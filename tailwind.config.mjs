@@ -1,3 +1,7 @@
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 /** @type {import('tailwindcss').Config} */
 
 const { fontFamily } = require("tailwindcss/defaultTheme");
@@ -9,6 +13,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -84,8 +89,8 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", "Outfit", ...fontFamily.sans],
         questrial: "Questrial",
-        manrope: ['Manrope', 'sans-serif'],
-        pockota: ['Pockota Medium', 'sans-serif'],
+        manrope: ["Manrope", "sans-serif"],
+        pockota: ["Pockota Medium", "sans-serif"],
       },
       gridTemplateColumns: {
         "16-auto": "250px auto",
@@ -153,6 +158,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
+    require("acentricity-ui"),
     plugin(function ({ addUtilities }) {
       const newUtilities = {
         ".text-muted": {
@@ -233,6 +239,7 @@ module.exports = {
       };
       addUtilities(newUtilities);
     }),
+    require("addVariablesForColors"),
   ],
   darkMode: "class",
 };
