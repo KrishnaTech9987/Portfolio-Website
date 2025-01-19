@@ -2,33 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Type from "../ui/Type";
+import {
+  containerVariants,
+  imageVariants,
+  itemVariants,
+} from "../animations/animations";
 
 const HeroSection = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        when: "beforeChildren",
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
-
-  const imageVariants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
-  };
-
   return (
     <section className="pt-16 pb-8 px-4 md:pt-32 md:pb-16">
       <div className="container mx-auto">

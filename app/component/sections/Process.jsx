@@ -89,7 +89,7 @@ const Process = memo(() => {
 
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
               <motion.button
-                className="bg-[#0d0c22] hover:bg-[#F4511E] text-white px-6 py-3 md:px-8 md:py-4 font-medium text-base rounded-full"
+                className="bg-[#0d0c22] hover:bg-[#7fbeeb] hover:text-black text-white px-6 py-3 md:px-8 md:py-4 font-medium text-base rounded-full"
                 whileHover={{ scale: 1.05, rotate: -5 }}
                 variants={itemVariants}
                 aria-label="Get Started"

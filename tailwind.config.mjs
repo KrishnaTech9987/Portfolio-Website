@@ -13,7 +13,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -37,9 +36,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        // "footer-gradient-start": "#0e1c26",
-        // "footer-gradient-mid": "#2a454b",
-        // "footer-gradient-end": "#294861",
         footer: "#111204",
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -92,7 +88,7 @@ module.exports = {
         manrope: ["Manrope", "sans-serif"],
         pockota: ["Pockota", "sans-serif"],
         "mona-sans": ["Mona Sans", "sans-serif"],
-        macondo: ['"Macondo"', 'sans-serif'],
+        macondo: ['"Macondo"', "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
       },
       gridTemplateColumns: {
