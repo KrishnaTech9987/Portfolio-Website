@@ -92,6 +92,7 @@ module.exports = {
         manrope: ["Manrope", "sans-serif"],
         pockota: ["Pockota", "sans-serif"],
         "mona-sans": ["Mona Sans", "sans-serif"],
+        macondo: ['"Macondo"', 'sans-serif'],
       },
       gridTemplateColumns: {
         "16-auto": "250px auto",

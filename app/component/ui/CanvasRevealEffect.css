@@ -1,0 +1,8 @@
+.dot {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust duration as needed */
+}
+
+.dot.fade-in {
+  opacity: 1;
+} 
