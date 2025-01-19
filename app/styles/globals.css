@@ -108,7 +108,7 @@ html {
 
 @font-face {
   font-family: "Pockota";
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   src: url("/public/fonts/Pockota/Pockota-LightItalic.otf") format("truetype");
 }
