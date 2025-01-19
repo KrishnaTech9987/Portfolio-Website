@@ -1,4 +1,4 @@
-import { Poppins, Mona_Sans } from "next/font/google";
+import { Poppins, Mona_Sans, Lexend } from "next/font/google";
 import "./styles/globals.css";
 import HomePage from "./page";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -16,6 +16,12 @@ const monaSans = Mona_Sans({
   variable: "--font-mona-sans",
 });
 
+// Configure Lexend font
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+});
+
 export const metadata = {
   title: "Krishna Digital Media",
   description: "Krishna Digital Media",
@@ -24,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${monaSans.variable} antialiased font-sans`}>
+      <body className={`${poppins.variable} ${monaSans.variable} ${lexend.variable} antialiased font-sans`}>
         <HomePage>{children}</HomePage>
         <SpeedInsights />
       </body>

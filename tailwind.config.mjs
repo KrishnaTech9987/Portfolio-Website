@@ -93,6 +93,7 @@ module.exports = {
         pockota: ["Pockota", "sans-serif"],
         "mona-sans": ["Mona Sans", "sans-serif"],
         macondo: ['"Macondo"', 'sans-serif'],
+        lexend: ["Lexend", "sans-serif"],
       },
       gridTemplateColumns: {
         "16-auto": "250px auto",
@@ -150,6 +151,17 @@ module.exports = {
       },
       animation: {
         spinSlow: "spin 4s linear infinite",
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
     },
   },
