@@ -90,7 +90,7 @@ module.exports = {
         sans: ["Poppins", "Outfit", ...fontFamily.sans],
         questrial: "Questrial",
         manrope: ["Manrope", "sans-serif"],
-        pockota: ["Pockota Medium", "sans-serif"],
+        pockota: ["Pockota LightItalic", "sans-serif"],
         "mona-sans": ["Mona Sans", "sans-serif"],
       },
       gridTemplateColumns: {

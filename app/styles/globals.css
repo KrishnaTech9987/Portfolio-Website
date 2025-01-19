@@ -38,7 +38,7 @@
 }
 
 body {
-  font-family: "Manrope", "Pockota Medium", "Open Sans", "Outfit", "Mona Sans", sans-serif;
+  font-family: "Pockota", "Manrope", "Open Sans", "Outfit", "Mona Sans", sans-serif;
   background-color: var(--background);
   color: var(--foreground);
   min-height: 100vh;
@@ -108,7 +108,7 @@ html {
 
 @font-face {
   font-family: "Pockota";
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   src: url("/public/fonts/Pockota/Pockota-LightItalic.otf") format("truetype");
 }
