@@ -6,7 +6,6 @@ import ContactUs from "./component/sections/ContactUs";
 import Agency from "./component/sections/Agency";
 import Process from "./component/sections/Process";
 import PricingPlan from "@/app/component/sections/Pricing";
-// import OverlappingCard from "./component/sections/OverlappingCard";
 // import Testimonials from '@/components/sections/Testimonials';
 // import Portfolio from '@/components/sections/Portfolio';
 // import LatestWork from '@/components/sections/LatestWork';
@@ -23,7 +22,6 @@ export default function Home() {
       <Agency />
       <PricingPlan />
       <ContactUs />
-      {/* <OverlappingCard /> */}
     </Layout>
   );
 }

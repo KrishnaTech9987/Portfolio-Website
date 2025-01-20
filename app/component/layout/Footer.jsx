@@ -6,7 +6,7 @@ import { socialLinks, contactDetails, navLinks } from "@/app/data/socialLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer text-white pt-[20px] md:pt-[70px] ">
+    <footer className="bg-footer text-white pt-[20px] md:pt-[250px] ">
       <div className="container mx-auto text-center">
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="flex-start-between-col space-y-3">

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import OverlappingCard from "@/app/component/sections/OverlappingCard";
 
 const Layout = ({ children }) => {
   return (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
       <main className="flex-grow overflow-auto">{children}</main>
+      <OverlappingCard />
       <div className="md:sticky md:top-0 md:z-40">
         <Footer />
       </div>

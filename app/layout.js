@@ -1,4 +1,4 @@
-import { Poppins, Mona_Sans, Lexend } from "next/font/google";
+import { Poppins, Mona_Sans, Lexend, Outfit } from "next/font/google";
 import "./styles/globals.css";
 import HomePage from "./page";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -22,6 +22,13 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
+// Configure Outfit font
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-outfit",
+});
+
 export const metadata = {
   title: "Krishna Digital Media",
   description: "Krishna Digital Media",
@@ -30,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${monaSans.variable} ${lexend.variable} antialiased font-sans`}>
+      <body className={`${poppins.variable} ${monaSans.variable} ${lexend.variable} ${outfit.variable} antialiased font-sans`}>
         <HomePage>{children}</HomePage>
         <SpeedInsights />
       </body>
