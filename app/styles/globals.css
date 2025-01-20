@@ -115,3 +115,19 @@ html {
   font-style: normal;
   src: url("/fonts/Pockota/Pockota-LightItalic.otf") format("truetype");
 }
+
+@keyframes custom-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -10px
+    ); /* Adjust this value to control the bounce height */
+  }
+}
+
+.custom-bounce {
+  animation: custom-bounce 1s infinite; /* Adjust duration as needed */
+}

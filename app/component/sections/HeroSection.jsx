@@ -51,7 +51,7 @@ const HeroSection = () => {
               src="/assets/images/HomePage/HeroSection/HeroAvatar.png"
               alt="Hero illustration"
               fill
-              className="object-contain"
+              className="object-contain custom-bounce"
             />
           </motion.div>
         </motion.div>
