@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { socialLinks, contactDetails, navLinks } from "../../data/socialLinks";
+import { socialLinks, contactDetails, navLinks } from "@/app/data/socialLinks";
 
 const Footer = () => {
   return (

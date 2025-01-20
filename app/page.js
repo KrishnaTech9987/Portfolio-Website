@@ -2,13 +2,14 @@
 import Layout from "./component/layout/Layout";
 import HeroSection from "./component/sections/HeroSection";
 import Services from "./component/sections/Services";
+import ContactUs from "./component/sections/ContactUs";
+import Agency from "./component/sections/Agency";
+import Process from "./component/sections/Process";
+import PricingPlan from "@/app/component/sections/Pricing";
+// import OverlappingCard from "./component/sections/OverlappingCard";
 // import Testimonials from '@/components/sections/Testimonials';
 // import Portfolio from '@/components/sections/Portfolio';
 // import LatestWork from '@/components/sections/LatestWork';
-import ContactUs from "./component/sections/ContactUs";
-import Pricing from "./component/sections/Pricing";
-import Agency from "./component/sections/Agency";
-import Process from "./component/sections/Process";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <Portfolio />
       <LatestWork /> */}
       <Agency />
-      <Pricing />
+      <PricingPlan />
       <ContactUs />
+      {/* <OverlappingCard /> */}
     </Layout>
   );
 }
