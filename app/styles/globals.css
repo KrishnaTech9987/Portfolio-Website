@@ -10,7 +10,6 @@
 @tailwind utilities;
 
 :root {
-
   /* Base font size */
   --font-size-base: 16px;
 
@@ -114,9 +113,7 @@ html {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(
-      -10px
-    ); /* Adjust this value to control the bounce height */
+    transform: translateY(-10px);
   }
 }
 

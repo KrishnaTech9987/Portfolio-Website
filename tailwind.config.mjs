@@ -135,7 +135,7 @@ module.exports = {
         manrope: ["Manrope", "sans-serif"],
         pockota: ["Pockota", "sans-serif"],
         "mona-sans": ["Mona Sans", "sans-serif"],
-        macondo: ['Macondo"', "sans-serif"],
+        macondo: ["Macondo", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
       },
       gridTemplateColumns: {
@@ -195,12 +195,6 @@ module.exports = {
       animation: {
         spinSlow: "spin 4s linear infinite",
         shimmer: "shimmer 2s linear infinite",
-        "marquee-slow": "marquee 60s linear infinite",
-        "marquee-normal": "marquee 40s linear infinite",
-        "marquee-fast": "marquee 20s linear infinite",
-        marquee: "marquee var(--duration) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "marquee-pause": "marquee var(--duration) linear infinite paused",
       },
       keyframes: {
         shimmer: {
@@ -210,14 +204,6 @@ module.exports = {
           to: {
             backgroundPosition: "-200% 0",
           },
-        },
-        marquee: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(-100% - var(--gap)))" },
-        },
-        "marquee-vertical": {
-          "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(calc(-100% - var(--gap)))" },
         },
       },
     },
@@ -294,7 +280,6 @@ module.exports = {
           display: "flex",
           alignItems: "center",
         },
-
         ".hide-scrollbar": {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",
