@@ -1,7 +1,7 @@
-# Digital Marketing Firm Portfolio Website
+# Krishna Digital Media Official Portfolio Website
 
 ## Overview
-This is the portfolio website for a digital marketing firm, designed to showcase services, client testimonials, case studies, and contact information. Built with modern web technologies, this project ensures an engaging and seamless user experience.
+This is the portfolio website of Krishna Digital Media, designed to showcase services, client testimonials, case studies, and contact information. Built with modern web technologies, this project ensures an engaging and seamless user experience.
 
 ## Tech Stack
 - **Next.js 15** – For server-side rendering and optimized frontend performance
@@ -22,7 +22,7 @@ This is the portfolio website for a digital marketing firm, designed to showcase
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/digital-marketing-portfolio.git
+   git clone https://github.com/KrishnaTech9987/Portfolio-Website.git
    cd digital-marketing-portfolio
    ```
 2. Install dependencies:
@@ -39,7 +39,7 @@ This is the portfolio website for a digital marketing firm, designed to showcase
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
-- The project can be deployed on **Vercel**, **Netlify**, or any cloud hosting platform.
+- The project can be deployed on **Vercel**, or any cloud hosting platform.
 - Ensure the database is hosted on a secure MySQL server.
 - Use environment variables for production credentials.
 
@@ -63,5 +63,5 @@ This is the portfolio website for a digital marketing firm, designed to showcase
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, reach out to **[Your Company Name]** at **contact@yourcompany.com** or visit our website at **[yourcompany.com](https://yourcompany.com)**.
+For any inquiries, reach out to **Krishna Digital Media** at **krishnadigitaltech@gmail.com** or visit our website at **[https://krishnamedia-portfoliowebsite.vercel.app/](https://https://krishnamedia-portfoliowebsite.vercel.app/)**.
 
