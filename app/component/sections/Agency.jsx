@@ -1,14 +1,54 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "../common/Button";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Agency = () => {
+  const sectionRef = useRef(null);
+  const textRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // Animate text content
+      gsap.from(textRef.current, {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Animate image
+      gsap.from(imageRef.current, {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="py-8 md:py-16 px-4">
+    <section ref={sectionRef} className="py-8 md:py-16 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div ref={textRef} className="space-y-6">
             <h2 className="text-3xl font-bold">
               Our <span className="text-primary">Agency</span>
             </h2>
@@ -26,7 +66,10 @@ const Agency = () => {
               Read More
             </Button>
           </div>
-          <div className="relative aspect-[4/3] w-full h-full rounded-[20px] overflow-hidden">
+          <div
+            ref={imageRef}
+            className="relative aspect-[4/3] w-full h-full rounded-[20px] overflow-hidden"
+          >
             <Image
               src="/assets/images/HomePage/Home/bg3.jpg"
               alt="Agency illustration showcasing our data-driven approach"
