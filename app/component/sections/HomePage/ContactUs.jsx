@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { ContactUsSocialLinks } from "../../data/socialLinks";
+import { ContactUsSocialLinks } from "../../../data/socialLinks";
 import { motion } from "framer-motion";
 
 const ContactUs = () => {

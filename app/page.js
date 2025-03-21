@@ -1,11 +1,12 @@
 "use client";
-import Layout from "./component/layout/Layout";
-import HeroSection from "./component/sections/HeroSection";
-import Services from "./component/sections/Services";
-import ContactUs from "./component/sections/ContactUs";
-import Agency from "./component/sections/Agency";
-import Process from "./component/sections/Process";
-import  Marquee  from "./component/ui/marquee";
+import Layout from "@components/layout/Layout";
+import HeroSection from "@components/sections/HomePage/HeroSection";
+import Services from "@components/sections/HomePage/Services";
+import ContactUs from "@components/sections/HomePage/ContactUs";
+import Agency from "@components/sections/HomePage/Agency";
+import Process from "@components/sections/HomePage/Process";
+import Marquee from "@components/ui/marquee";
+
 // import PricingPlan from "@/app/component/sections/Pricing";
 // import Testimonials from '@/components/sections/Testimonials';
 // import Portfolio from '@/components/sections/Portfolio';

@@ -1,5 +1,5 @@
 "use client";
-import { PricingRightArrow } from "../../../public/assets/icons";
+import { PricingRightArrow } from "../../../../public/assets/icons";
 import { motion } from "framer-motion";
 
 export default function OverlappingCard() {

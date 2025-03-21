@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Type from "../ui/Type";
+import Type from "../../ui/Type";
 import {
   containerVariants,
   imageVariants,
   itemVariants,
-} from "../animations/animations";
+} from "../../animations/animations";
 
 const HeroSection = () => {
   return (

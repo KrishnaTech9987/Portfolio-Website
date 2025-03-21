@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
-import { services } from "../../data/sharedData";
+import { services } from "../../../data/sharedData";
 
 const Services = React.memo(() => {
   const [isVisible, setIsVisible] = useState(false);

@@ -21,7 +21,13 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".", // Required for paths to work
+    "paths": {
+      "@components/*": ["app/component/*"],
+      "@utils/*": ["app/utils/*"],
+      "@styles/*": ["app/styles/*"]
+    }
   },
   "include": [
     "next-env.d.ts",

@@ -2,8 +2,8 @@
 import React, { memo, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { steps } from "../../data/sharedData";
-import { itemVariants } from "../animations/animations";
+import { steps } from "../../../data/sharedData";
+import { itemVariants } from "../../animations/animations";
 
 const Process = memo(() => {
   const [isVisible, setIsVisible] = useState(false);
