@@ -1,5 +1,5 @@
 "use client";
-import Layout from "@components/layout/Layout";
+// import Layout from "@components/layout/Layout";
 import HeroSection from "@components/sections/HomePage/HeroSection";
 import Services from "@components/sections/HomePage/Services";
 import ContactUs from "@components/sections/HomePage/ContactUs";
@@ -14,7 +14,8 @@ import Marquee from "@components/ui/marquee";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
+      {/* <Layout> */}
       <HeroSection />
       <Services />
       <Process />
@@ -25,6 +26,7 @@ export default function Home() {
       <Marquee />
       {/* <PricingPlan /> */}
       <ContactUs />
-    </Layout>
+      {/* </Layout> */}
+    </>
   );
 }

@@ -8,19 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 // Memoized navigation items to prevent unnecessary re-renders
-// const navigation = [
-//   { name: "Home", href: "/" },
-//   { name: "Works", href: "/works/" },
-//   { name: "About", href: "/about" },
-//   { name: "FAQ", href: "/faq" },
-//   { name: "Services", href: "/services" },
-// ];
-
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Works", href: "/pages/works" },
   { name: "About", href: "/pages/about" },
-  { name: "FAQ", href: "/pages/faq" },
+  { name: "FAQ", href: "/pages/FAQ" },
   { name: "Services", href: "/pages/services" },
 ];
 
@@ -33,7 +25,7 @@ const NavLink = memo(({ href, name, isActive, isMobile, onClick }) => (
       isMobile ? "block w-full text-center py-4 text-lg" : "px-3 py-2 text-sm",
       isActive ? "text-[#400406]" : "text-gray-600",
       !isMobile &&
-      "before:absolute before:inset-x-0 before:bottom-0 before:h-0.5 before:origin-left before:scale-x-0 before:bg-[#400406] before:transition-transform hover:before:scale-x-100",
+        "before:absolute before:inset-x-0 before:bottom-0 before:h-0.5 before:origin-left before:scale-x-0 before:bg-[#400406] before:transition-transform hover:before:scale-x-100",
       !isMobile && isActive && "before:scale-x-100"
     )}
     onClick={onClick}
