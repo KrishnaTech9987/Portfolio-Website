@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import ContactButton from "@components/ui/ContactButton";
 
 // Memoized navigation items to prevent unnecessary re-renders
 const navigation = [
@@ -36,21 +37,21 @@ const NavLink = memo(({ href, name, isActive, isMobile, onClick }) => (
 NavLink.displayName = "NavLink";
 
 // Memoized contact button component
-const ContactButton = memo(({ isMobile = false }) => (
-  <motion.button
-    className={cn(
-      "bg-[#400406] hover:bg-[#d7be82] text-white hover:text-black font-medium rounded-full transition-all duration-300",
-      isMobile
-        ? "mt-8 w-full max-w-xs py-3 text-lg"
-        : "hidden lg:block px-6 py-3 text-sm"
-    )}
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    Contact Us
-  </motion.button>
-));
-ContactButton.displayName = "ContactButton";
+// const ContactButton = memo(({ isMobile = false }) => (
+//   <motion.button
+//     className={cn(
+//       "bg-[#400406] hover:bg-[#d7be82] text-white hover:text-black font-medium rounded-full transition-all duration-300",
+//       isMobile
+//         ? "mt-8 w-full max-w-xs py-3 text-lg"
+//         : "hidden lg:block px-6 py-3 text-sm"
+//     )}
+//     whileHover={{ scale: 1.05 }}
+//     whileTap={{ scale: 0.95 }}
+//   >
+//     Contact Us
+//   </motion.button>
+// ));
+// ContactButton.displayName = "ContactButton";
 
 const Navbar = () => {
   const pathname = usePathname();
